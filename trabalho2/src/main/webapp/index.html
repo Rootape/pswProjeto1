@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #notas {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #notas td, #notas th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #notas tr:nth-child(even){background-color: #f2f2f2;}
+
+            #notas tr:hover {background-color: #ddd;}
+
+            #notas th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form action="NewServlet" method="POST">
+            
+            <fieldset>
+                
+                <legend> Info do Aluno </legend>
+                Frequencia:<br> 
+                <input name="freq" type="text">
+                <br>
+                P1:<br> 
+                <input name="p1" type="text">
+                <br>
+                Trabalhos:<br> 
+                <input name="trab" type="text">
+                <br>
+                ProjetosEmAula:<br> 
+                <input name="proj" type="text">
+                <br>
+                PF:<br> 
+                <input name="pf" type="text">
+                <br><br>
+                <input type="submit" value="Enviar">
+                
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
