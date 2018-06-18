@@ -39,6 +39,7 @@
         </style>
     </head>
     <body>
+        <h1>Imprimindo tabela por Scripting do JSP. Sem validação.</h1>
         <form action="MyServlet" method="POST">
             <fieldset>
                 <legend>Notas do Aluno:</legend>
