@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<table id="customers">
+  <tr>
+    <th>Aluno</th>
+    <th>Nota1</th> 
+    <th>Nota2</th>
+	<th>Nota Final</th>
+	<th>Prova Final</th>
+	<th>Situação</th>
+  </tr>
+  <tr>
+    <td>João</td>
+    <td>10</td>
+    <td>9</td>
+	<td>9.5</td>
+	<td>10</td>
+	<td id="jsit">Aprovado</td>
+  </tr>
+  <tr>
+    <td>Maria</td>
+    <td>8</td>
+    <td>9</td>
+	<td>8.5</td>
+	<td>10</td>
+	<td>Aprovado</td>
+  </tr>
+  <tr>
+    <td>José</td>
+    <td>7</td>
+    <td>6</td>
+	<td>6.5</td>
+	<td>10</td>
+	<td>Aprovado</td>
+  </tr>
+</table>
+
+<button type="button" onclick='document.getElementById("jsit").innerHTML = "Reprovado"'>Mudar</button>
+
+<hr>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Resultado do Aluno</legend>
+    Aluno:<br>
+    <input type="text" name="aluno">
+    <br>
+    Nota 1:<br>
+    <input type="text" name="nota1">
+    <br>
+	Nota 2:<br>
+    <input type="text" name="nota2">
+    <br>
+	Nota Final:<br>
+    <input type="text" name="notaf">
+    <br>
+	Prova Final:<br>
+    <input type="text" name="pf">
+    <br>
+	Situação:<br>
+    <input type="text" name="situ">
+    <br><br>
+    <input type="submit" value="Enviar">
+  </fieldset>
+</form>
+
+</body>
+</html>
